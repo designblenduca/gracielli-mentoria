@@ -882,6 +882,108 @@ h1, h2, h3, h4, h5, h6 {
    15. Testimonials
    ======================================== */
 
+/* ========================================
+   Book Section
+   ======================================== */
+
+.book-section {
+  background: var(--color-off-white);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.book-image {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  max-width: 340px;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.book-image img {
+  width: 100%;
+  display: block;
+}
+
+.book-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-body-text);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.book-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 24px;
+}
+
+.book-badge {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-verde);
+  color: var(--color-verde-text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.book-text {
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  color: var(--color-body-text);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.book-quote {
+  border-left: 3px solid var(--color-verde);
+  margin: 24px 0;
+  padding: 12px 0 12px 20px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: 1.7;
+}
+
+@media (min-width: 769px) {
+  .book-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 64px;
+    align-items: stretch;
+  }
+
+  .book-image {
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 400px;
+  }
+
+  .book-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+.book-text {
+  text-wrap: balance;
+}
+
 .testimonials {
   background: var(--color-off-white);
 }
