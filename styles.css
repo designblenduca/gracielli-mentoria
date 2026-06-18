@@ -961,6 +961,10 @@ h1, h2, h3, h4, h5, h6 {
     order: -1;
     max-width: 100%;
   }
+
+  .cta-final-bg {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
